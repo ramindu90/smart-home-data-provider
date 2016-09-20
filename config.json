@@ -1,0 +1,39 @@
+{
+    "info": {
+        "id": "home",
+        "name": "Home Analytics Data Source",
+        "image": ""
+    },
+    "config": [
+        {
+            "fieldType": "advanced",
+            "wizard-imports": {
+                "js": [
+                    "mainHandler.js"
+                ]
+            }
+        },
+        {
+            "fieldLabel": "Event Table",
+            "fieldName": "tableName",
+            "fieldType": "dropDown"
+        },
+        {
+            "fieldLabel": "Select data range",
+            "fieldName": "dataRange",
+            "fieldType": "dropDown"
+        },
+        {
+            "fieldLabel": "Select data order",
+            "fieldName": "dataOrder",
+            "fieldType": "dropDown"
+        },
+        {
+            "fieldLabel": "Select table attribute",
+            "fieldName": "orderAttribute",
+            "fieldType": "dropDown"
+        }
+    ],
+    "provider-libs" : ["das-client.js", "carbon-analytics.js", "homeAnalyticsDataRanges.js"],
+    "provider-apis": ["homeAnalyticsDataRanges.js", "client.js"]
+}
